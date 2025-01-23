@@ -1,0 +1,155 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --primary-color: #ffbe0b;
+    --verde: #9f0;
+    --verde-agua: #0f9;
+    --rosa: #ff006e;
+    --morado: #8338ec;
+    --azul: #3a86ff;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 10rem;
+}
+h3{
+    font-size: 5rem;
+    color: var(--white);
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+p{
+    font-size: 1.6rem;
+}
+span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.game-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    z-index: 2;
+    position: absolute;
+}
+
+.score-board{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    
+}
+.play-button{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--verde);
+    color: var(--black);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.play-button:hover{
+    background-color: var(--verde-agua);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.options{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.rock,.paper,.scissors{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: all .3s ease-in-out;
+}
+
+.rock{
+    background-color: var(--rosa);
+}
+.rock:hover{
+    background-color: #ff00a2;
+    flex: 2;
+}
+.paper{
+    background-color: var(--morado);    
+}
+.paper:hover{
+    background-color: #a300ff;
+    flex: 2;
+}
+.scissors{
+    background-color: var(--azul);
+}
+.scissors:hover{
+    background-color: #0055ff;
+    flex: 2;
+}
+
+.timer{
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}

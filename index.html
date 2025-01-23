@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra papel o tijeras</title>
+
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="options">
+        <div class="rock">
+            <h2>🗿</h2>
+        </div>
+        <div class="paper">
+            <h2>📄</h2>
+        </div>
+        <div class="scissors">
+            <h2>✂️</h2>
+        </div>
+        <div class="timer">
+            <h3 id="time"></h3>
+        </div>
+    </div>
+
+
+    <main class="game-overlay">
+        <section class="score-board">
+            <article>
+                <p class="badge">Player 1 <span id="user_score">0</span></p>
+            </article>
+            :
+            <article>
+                <p class="badge"><span id="pc_score">0</span>  PC </p>
+            </article>
+        </section>
+        <section class="start-game">
+            <h1>Piedra, papel o tijeras</h1>
+            <!-- play button -->
+            <button class="play-button">Play</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by <a href="https://github.com/EduardoGMora" target="_blank">Eduardo Mora</a></p>
+    </footer>
+
+
+</body>
+</html>
